@@ -33,9 +33,9 @@ public class Lista {
 				if(aux.dado <= aux2.dado && aux.dado >= aux2.dado){
 					
 					aux2.esq.dir = aux;
-					aux.dir = aux2;
+					aux.dir = aux2.dir;
 					aux.esq = aux2.esq;	
-					aux2.esq = aux;
+					aux2.dir = aux;
 					
 					break;
 				}
